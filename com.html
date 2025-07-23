@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Gurus – Two Day Tech Fiesta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #000;
+      --text-color: #fff;
+      --card-bg: #111;
+      --accent: #00BFFF;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header.kit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .tcs-style-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .tcs-style-logo img {
+      height: 60px;
+      width: 60px;
+      margin-right: 15px;
+      border-radius: 50%;
+      border: 2px solid #00FFFF;
+    }
+
+    .kit-brand-text .title {
+      font-size: 2rem;
+      font-family: 'Pacifico', cursive;
+      color: #00FFFF;
+    }
+
+    .kit-brand-text .subtitle {
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .google-logo {
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: 'Product Sans', 'Roboto', sans-serif;
+    }
+
+    .google-logo .g { color: #4285F4; }
+    .google-logo .o1 { color: #EA4335; }
+    .google-logo .o2 { color: #FBBC05; }
+    .google-logo .g2 { color: #34A853; }
+    .google-logo .l { color: #4285F4; }
+    .google-logo .e { color: #EA4335; }
+
+    .gurus-title {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.4rem;
+      background: linear-gradient(90deg, #00FFF0, #00BFFF, #1E90FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .event-title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .event-day {
+      background-color: var(--card-bg);
+      padding: 30px;
+      margin: 30px 15px;
+      border-radius: 10px;
+      border-left: 5px solid var(--accent);
+    }
+
+    .event-day h3 {
+      color: #00FFFF;
+    }
+
+    .form-section iframe {
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      width: 100%;
+      height: 900px;
+    }
+
+    .toggle-btn, .share-btn {
+      cursor: pointer;
+      padding: 8px 12px;
+      margin: 10px;
+      background-color: var(--accent);
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .top-right {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid var(--accent);
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #00BFFF;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header class="kit-header">
+    <div class="tcs-style-logo">
+      <img src="image/logo.png" alt="KIT Logo" />
+      <div class="kit-brand-text">
+        <span class="title">KIT</span>
+        <span class="subtitle">Kangeyam Institute of Technology</span>
+      </div>
+    </div>
+    <div class="google-logo top-right">
+      <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="event-title">
+      <h1>
+        <span class="google-logo">
+          <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+        </span>
+        <span class="gurus-title">Gurus – Two Day Tech Fiesta</span>
+      </h1>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    <button class="share-btn" onclick="sharePage()">Share</button>
+    <button class="share-btn" onclick="generateQRCode()">Generate QR</button>
+    <div id="qrcode" style="margin-top: 20px;"></div>
+
+    <div class="event-day">
+      <h3>Day 1: Googlenovate – Innovate, Collaborate, Present – the Google Way</h3>
+      <p>
+        💡 Students solve real-world problems using only Google applications.
+      </p>
+      <p><strong>✅ Full-Day Schedule (Ends by 4:00 PM)</strong></p>
+      <table>
+        <tr><th>Time</th><th>Activity</th></tr>
+        <tr><td>09:00 AM</td><td>Registration & Team Formation</td></tr>
+        <tr><td>09:30 AM</td><td>Inauguration & Briefing on Google Tools (Slides, Sheets, Forms, etc.)</td></tr>
+        <tr><td>10:00 AM</td><td>Theme Announcement (Education, Health, Business, Environment, etc.)</td></tr>
+        <tr><td>10:15 AM</td><td>Team Brainstorming using Google Docs or Jamboard</td></tr>
+        <tr><td>11:00 AM</td><td>Start Project Planning in Google Sheets & Data Collection</td></tr>
+        <tr><td>12:30 PM</td><td>Lunch Break</td></tr>
+        <tr><td>01:15 PM</td><td>Build Solutions: Forms, Sites, Docs, Slides, Maps, Sheets, etc.</td></tr>
+        <tr><td>02:30 PM</td><td>Final Touches: Slide Deck, Report & Google Site (if applicable)</td></tr>
+        <tr><td>03:15 PM</td><td>Submit Final Project Links via Google Form</td></tr>
+        <tr><td>03:30 PM</td><td>Review by Mentors / Dry Run (if time permits)</td></tr>
+        <tr><td>04:00 PM</td><td>Day 1 Close & Instructions for Day 2</td></tr>
+      </table>
+    </div>
+
+    <div class="event-day">
+      <h3>Day 2: PromptCraft – The Art of Talking to AI – Google Style</h3>
+      <p>
+        🎯 Prompt Challenges + Prompt Duel – All before lunch!
+      </p>
+      <p><strong>✅ Condensed Schedule (Ends by 12:30 PM)</strong></p>
+      <table>
+        <tr><th>Time</th><th>Activity</th></tr>
+        <tr><td>09:00 AM</td><td>Registration & Seating</td></tr>
+        <tr><td>09:15 AM</td><td>Orientation: What is a Good Prompt? (Talk + Examples)</td></tr>
+        <tr><td>09:30 AM</td><td>Prompt Challenge – Round 1: Task-Based Prompting</td></tr>
+        <tr><td>10:15 AM</td><td>Prompt Challenge – Round 2: Creative Prompting</td></tr>
+        <tr><td>11:00 AM</td><td>Prompt Submission & Shortlisting by Judges</td></tr>
+        <tr><td>11:15 AM</td><td>Prompt Duel (Live): 1-on-1 Faceoff (Top 4–6 Finalists)</td></tr>
+        <tr><td>12:00 PM</td><td>Judges’ Decision + Audience Poll (Optional)</td></tr>
+        <tr><td>12:15 PM</td><td>Awards & Closing Ceremony</td></tr>
+        <tr><td>12:30 PM</td><td>Event Ends</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 KIT - Kangeyam Institute of Technology. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      if (root.style.getPropertyValue('--bg-color') === '#fff') {
+        root.style.setProperty('--bg-color', '#000');
+        root.style.setProperty('--text-color', '#fff');
+        root.style.setProperty('--card-bg', '#111');
+      } else {
+        root.style.setProperty('--bg-color', '#fff');
+        root.style.setProperty('--text-color', '#000');
+        root.style.setProperty('--card-bg', '#f0f0f0');
+      }
+    }
+
+    function sharePage() {
+      if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          url: window.location.href
+        });
+      } else {
+        alert('Sharing not supported in this browser.');
+      }
+    }
+
+    function generateQRCode() {
+      const container = document.getElementById('qrcode');
+      container.innerHTML = '';
+      QRCode.toCanvas(window.location.href, function (error, canvas) {
+        if (error) console.error(error);
+        container.appendChild(canvas);
+      });
+    }
+  </script>
+</body>
+</html>

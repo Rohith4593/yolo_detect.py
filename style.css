@@ -1,0 +1,76 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  border-bottom: 2px solid blue;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.tagline {
+  margin: 5px 0 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Event section */
+.event-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.event-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: white;
+  border-bottom: 2px solid blue;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Event cards */
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #111;
+  border: 2px solid blue;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Gurus – Two Day Tech Fiesta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #000;
+      --text-color: #fff;
+      --card-bg: #111;
+      --accent: #00BFFF;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header.kit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .tcs-style-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .tcs-style-logo img {
+      height: 60px;
+      width: 60px;
+      margin-right: 15px;
+      border-radius: 50%;
+      border: 2px solid #00FFFF;
+    }
+
+    .kit-brand-text .title {
+      font-size: 2rem;
+      font-family: 'Pacifico', cursive;
+      color: #00FFFF;
+    }
+
+    .kit-brand-text .subtitle {
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    .google-logo {
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: 'Product Sans', 'Roboto', sans-serif;
+    }
+
+    .google-logo .g { color: #4285F4; }
+    .google-logo .o1 { color: #EA4335; }
+    .google-logo .o2 { color: #FBBC05; }
+    .google-logo .g2 { color: #34A853; }
+    .google-logo .l { color: #4285F4; }
+    .google-logo .e { color: #EA4335; }
+
+    .gurus-title {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.4rem;
+      background: linear-gradient(90deg, #00FFF0, #00BFFF, #1E90FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .event-title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .event-day {
+      background-color: var(--card-bg);
+      padding: 30px;
+      margin: 30px 20px;
+      border-radius: 10px;
+      border-left: 5px solid var(--accent);
+    }
+
+    .event-day h3 {
+      color: #00FFFF;
+      margin-bottom: 10px;
+    }
+
+    .dept-section {
+      background-color: #222;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #00FFFF;
+    }
+
+    .form-section iframe {
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      width: 100%;
+      height: 900px;
+    }
+
+    .toggle-btn, .share-btn {
+      cursor: pointer;
+      padding: 8px 12px;
+      margin: 10px;
+      background-color: var(--accent);
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .top-right {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid var(--accent);
+      margin-top: 40px;
+    }
+
+    .venue {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header.kit-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .tcs-style-logo {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .google-logo.top-right {
+        position: static;
+        margin-top: 10px;
+        font-size: 1.8rem;
+      }
+
+      .kit-brand-text .title {
+        font-size: 1.6rem;
+      }
+
+      .kit-brand-text .subtitle {
+        font-size: 0.9rem;
+      }
+
+      .event-title h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+      }
+
+      .gurus-title {
+        font-size: 1.2rem;
+        display: block;
+        margin-top: 8px;
+      }
+
+      .event-day {
+        padding: 15px;
+        margin: 20px 10px;
+      }
+
+      .dept-section {
+        font-size: 0.95rem;
+      }
+
+      .form-section iframe {
+        height: 800px;
+      }
+
+      .toggle-btn, .share-btn {
+        margin: 8px 5px;
+        font-size: 0.9rem;
+      }
+
+      .venue {
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="kit-header">
+    <div class="tcs-style-logo">
+      <img src="image/logo.png" alt="KIT Logo" />
+      <div class="kit-brand-text">
+        <span class="title">KIT</span>
+        <span class="subtitle">Kangeyam Institute of Technology</span>
+      </div>
+    </div>
+    <div class="google-logo top-right">
+      <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="event-title">
+      <h1>
+        <span class="google-logo">
+          <span class="g">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+        </span>
+        <span class="gurus-title">Gurus – Two Day Tech Fiesta</span>
+      </h1>
+    </div>
+
+    <div style="text-align: center;">
+      <button class="toggle-btn" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+      <button class="share-btn" onclick="sharePage()">Share</button>
+      <button class="share-btn" onclick="generateQRCode()">Generate QR</button>
+    </div>
+    <div id="qrcode" style="text-align: center; margin: 20px;"></div>
+
+    <!-- Day 1 -->
+    <div class="event-day">
+      <h3>Day 1 – August 21: Googlenovate</h3>
+      <div class="dept-section">
+        <strong>EEE, ECE:</strong> Circuit Building using Tinkercad
+      </div>
+      <div class="dept-section">
+        <strong>Civil, Mechanical:</strong> AutoCAD Design Challenge
+      </div>
+      <div class="dept-section">
+        <strong>CSE, AI&DS, AIML:</strong> UI/UX Design with Google Apps
+      </div>
+      <p style="margin-top: 15px;">🔍 All competitions are based exclusively on Google Applications. Prizes will be awarded based on efficient usage of Google tools.</p>
+    </div>
+
+    <div class="form-section">
+      <h3 style="text-align: center;">Day 1 Registration</h3>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqEhMmbEqK5nTLrZqhTQk0yj7TKZWHz5xPJQODVlSS4XNBDg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="event-day">
+      <h3>Day 2 – August 22: PromptCraft</h3>
+      <div class="dept-section">
+        <strong>All Branches:</strong> Create prompts based on surprise themes. Open to creativity!
+      </div>
+      <p style="margin-top: 15px;">💡 A single round creative event where the best prompt wins.</p>
+    </div>
+
+    <div class="form-section">
+      <h3 style="text-align: center;">Day 2 Registration</h3>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAKEbpKPfZxkgzY7ce1vfBQ8eg9vTmYwFZctVx5bXJkRlDHA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+    <div class="venue">
+      📍 <strong>Venue:</strong> A-Block, New AI Lab – KIT Campus
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 KIT - Kangeyam Institute of Technology. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      if (root.style.getPropertyValue('--bg-color') === '#fff') {
+        root.style.setProperty('--bg-color', '#000');
+        root.style.setProperty('--text-color', '#fff');
+        root.style.setProperty('--card-bg', '#111');
+      } else {
+        root.style.setProperty('--bg-color', '#fff');
+        root.style.setProperty('--text-color', '#000');
+        root.style.setProperty('--card-bg', '#f0f0f0');
+      }
+    }
+
+    function sharePage() {
+      if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          url: window.location.href
+        });
+      } else {
+        alert('Sharing not supported in this browser.');
+      }
+    }
+
+    function generateQRCode() {
+      const container = document.getElementById('qrcode');
+      container.innerHTML = '';
+      QRCode.toCanvas(window.location.href, function (error, canvas) {
+        if (error) console.error(error);
+        container.appendChild(canvas);
+      });
+    }
+  </script>
+</body>
+</html>
